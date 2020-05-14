@@ -18,4 +18,4 @@ the data set of UCI Human Activity Recognition Using Smartphones Data Set
   + Step4: Appropriately labels the data set with descriptive variable names.
   + Step5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity   and each subject.
 
-* **tidyDataSet_average.txt** is the final version of tidy data
+* **tidyDataSet_average.text** is the final version of tidy data
