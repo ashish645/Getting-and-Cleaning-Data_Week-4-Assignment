@@ -15,3 +15,22 @@
 * Step:3 Uses descriptive activity names to name the activities in the data set
 * Step:4 Appropriately labels the data set with descriptive variable names.
 * Step:5 From the data set in Step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+*  creating final version of tidy data in text format namely **tidyDataSet_average.text**. This data set is  average of each variable for each activity and each subject. 
+    + this version of tidy data has 180 observation and 81 variable
+    + *SubjectCode*  ranges from 1-30 is stored as numberic
+    + *ActivityCode* stored as character it has following six levels
+        + WALKING
+        + WALKING_UPSTAIRS
+        + WALKING_DOWNSTAIRS
+        + SITTING
+        + STANDING
+        + LAYING
+    + all renaming variable are stored as numeric
+    
+    
+    
+    
+    
+    
+ 
