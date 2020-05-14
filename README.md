@@ -4,8 +4,8 @@ This repository was created as a part week 4 peer graded assignment. It include 
 the data set of UCI Human Activity Recognition Using Smartphones Data Set
 
 #### Dataset 
-* [Description of data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-* [Url of Data](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+* You can found a full description of raw data from here [Description of data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+* The raw data in Zip format can be downloded from this [link](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ### Files
 * **CodeBook.md**  a code book that describes the variables, the data, and any transformations or work that i have performed to clean up the data 
