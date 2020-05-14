@@ -1,35 +1,35 @@
 
 # Step0: Downloding and labeling the data
 
-# Importing Data
+# 0.1 importing Data
 library(dplyr)
 library(data.table)
 file_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 file_path <-"G:/coursera/Getting and Cleaning Data/Data/UCI_Smartphones.zip"
 download.file(file_url,file_path,method = "curl")
 
-#unzipping the data set
+# 0.2 unzipping the data set
 unzip(file_path,exdir = "G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set")
 
-# extracting data from zip file
+# 0.3 extracting data from zip file
 
-# reading test data
+# 0.3.1 reading test data
 X_testData <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/test/X_test.txt")
 Y_testData <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/test/y_test.txt")
 SubjectTest <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/test/subject_test.txt")
 
-# reading traning data
+# 0.3.2 reading traning data
 X_trainingData <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/train/X_train.txt")
 Y_trainingData <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/train/y_train.txt")
 SubjectTraining <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/train/subject_train.txt")
 
-# Reading Activity lable data
+# 0.3.3 reading Activity lable data
 Activity_lables <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/activity_labels.txt")
 
-# Reading variable/feature  data
+# 0.3.4 reading variable/feature  data
 features <- read.table("G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/UCI HAR Dataset/features.txt")
 
-# assining proper name to the variables 
+# 0.3.5 assigning proper name to the variables 
 colnames(features)
 features <- rename(features, N = V1, Varible_Name = V2 )
 colnames(X_trainingData) = features[,2]
@@ -96,3 +96,6 @@ View(tidyDataSet_average)
 finaldata_path <- "G:/coursera/Getting and Cleaning Data/Data/Smartphones Data Set/tidyDataSet_average.text"
 write.table(tidyDataSet_average,file = finaldata_path, row.names = FALSE,col.names = TRUE )
 
+# Str of final version of tidy data
+colnames(tidyDataSet_average)
+str(tidyDataSet_average)
